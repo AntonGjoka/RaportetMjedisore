@@ -32,6 +32,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblWeb = new System.Windows.Forms.Label();
+            this.lblAddresaK = new System.Windows.Forms.Label();
+            this.lblKomuna = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.button1 = new System.Windows.Forms.Button();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -331,10 +335,6 @@
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblKomuna = new System.Windows.Forms.Label();
-            this.lblAddresaK = new System.Windows.Forms.Label();
-            this.lblWeb = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -360,7 +360,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(641, 879);
+            this.tabControl1.Size = new System.Drawing.Size(636, 728);
             this.tabControl1.TabIndex = 7;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
@@ -426,10 +426,49 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(633, 846);
+            this.tabPage1.Size = new System.Drawing.Size(628, 695);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "F1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblWeb
+            // 
+            this.lblWeb.AutoSize = true;
+            this.lblWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeb.Location = new System.Drawing.Point(343, 211);
+            this.lblWeb.Name = "lblWeb";
+            this.lblWeb.Size = new System.Drawing.Size(63, 16);
+            this.lblWeb.TabIndex = 65;
+            this.lblWeb.Text = "Komunat:";
+            // 
+            // lblAddresaK
+            // 
+            this.lblAddresaK.AutoSize = true;
+            this.lblAddresaK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddresaK.Location = new System.Drawing.Point(343, 174);
+            this.lblAddresaK.Name = "lblAddresaK";
+            this.lblAddresaK.Size = new System.Drawing.Size(63, 16);
+            this.lblAddresaK.TabIndex = 64;
+            this.lblAddresaK.Text = "Komunat:";
+            // 
+            // lblKomuna
+            // 
+            this.lblKomuna.AutoSize = true;
+            this.lblKomuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKomuna.Location = new System.Drawing.Point(343, 140);
+            this.lblKomuna.Name = "lblKomuna";
+            this.lblKomuna.Size = new System.Drawing.Size(63, 16);
+            this.lblKomuna.TabIndex = 63;
+            this.lblKomuna.Text = "Komunat:";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(3, 670);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(622, 22);
+            this.statusStrip1.TabIndex = 62;
+            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // button1
             // 
@@ -905,7 +944,7 @@
             this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(8, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(545, 22);
+            this.label3.Size = new System.Drawing.Size(572, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "RVMM 1 - Raporti vjetor i menagjimit te mbeturinave nga komunat";
             // 
@@ -915,7 +954,7 @@
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 18);
+            this.label2.Size = new System.Drawing.Size(197, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "FORMULARI 1: Faqja hyrese";
             // 
@@ -934,7 +973,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(633, 846);
+            this.tabPage2.Size = new System.Drawing.Size(628, 695);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "F2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -944,7 +983,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(633, 846);
+            this.tabPage3.Size = new System.Drawing.Size(628, 695);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "F3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -953,7 +992,7 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(633, 846);
+            this.tabPage4.Size = new System.Drawing.Size(628, 695);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "F4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -962,7 +1001,7 @@
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(633, 846);
+            this.tabPage5.Size = new System.Drawing.Size(628, 695);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "F5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -983,7 +1022,7 @@
             this.tabPage6.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(633, 846);
+            this.tabPage6.Size = new System.Drawing.Size(628, 695);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "F6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -994,7 +1033,7 @@
             this.label41.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(9, 174);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(35, 17);
+            this.label41.Size = new System.Drawing.Size(36, 17);
             this.label41.TabIndex = 1;
             this.label41.Text = "Kodi";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1005,7 +1044,7 @@
             this.label42.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(118, 174);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(111, 17);
+            this.label42.Size = new System.Drawing.Size(117, 17);
             this.label42.TabIndex = 2;
             this.label42.Text = "Lloji i mbeturnav";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1016,7 +1055,7 @@
             this.label47.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.Location = new System.Drawing.Point(1042, 140);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(185, 51);
+            this.label47.Size = new System.Drawing.Size(200, 51);
             this.label47.TabIndex = 7;
             this.label47.Text = "3. Mbeturinat e grumbulluara\r\nnga hapesirat publike- \r\ndeponi ilegale";
             // 
@@ -2648,7 +2687,7 @@
             this.label135.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label135.Location = new System.Drawing.Point(70, 685);
             this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(156, 15);
+            this.label135.Size = new System.Drawing.Size(171, 15);
             this.label135.TabIndex = 44;
             this.label135.Text = "Mbeturinat tjera komunale";
             this.label135.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2692,7 +2731,7 @@
             this.label131.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label131.Location = new System.Drawing.Point(70, 609);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(207, 15);
+            this.label131.Size = new System.Drawing.Size(230, 15);
             this.label131.TabIndex = 44;
             this.label131.Text = "Mbeturinat nga kopshtet dhe parqet";
             this.label131.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2747,7 +2786,7 @@
             this.label126.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label126.Location = new System.Drawing.Point(4, 685);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(40, 15);
+            this.label126.Size = new System.Drawing.Size(47, 15);
             this.label126.TabIndex = 44;
             this.label126.Text = "2 0 0 3";
             this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2791,7 +2830,7 @@
             this.label120.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label120.Location = new System.Drawing.Point(4, 609);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(40, 15);
+            this.label120.Size = new System.Drawing.Size(47, 15);
             this.label120.TabIndex = 44;
             this.label120.Text = "2 0 0 2";
             this.label120.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2802,7 +2841,7 @@
             this.label55.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(4, 1);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(19, 15);
+            this.label55.Size = new System.Drawing.Size(21, 15);
             this.label55.TabIndex = 8;
             this.label55.Text = "17";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2846,7 +2885,7 @@
             this.label60.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.Location = new System.Drawing.Point(4, 20);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(40, 15);
+            this.label60.Size = new System.Drawing.Size(47, 15);
             this.label60.TabIndex = 12;
             this.label60.Text = "1 7 0 1";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2868,7 +2907,7 @@
             this.label62.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(4, 96);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(40, 15);
+            this.label62.Size = new System.Drawing.Size(47, 15);
             this.label62.TabIndex = 14;
             this.label62.Text = "1 7 0 2";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2912,7 +2951,7 @@
             this.label66.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.Location = new System.Drawing.Point(4, 172);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(40, 15);
+            this.label66.Size = new System.Drawing.Size(47, 15);
             this.label66.TabIndex = 18;
             this.label66.Text = "1 7 0 3";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2923,7 +2962,7 @@
             this.label67.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(70, 1);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(245, 15);
+            this.label67.Size = new System.Drawing.Size(211, 18);
             this.label67.TabIndex = 19;
             this.label67.Text = "Mbeturinat nga Konstruktimi dhe Demolimi";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2934,7 +2973,7 @@
             this.label61.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.Location = new System.Drawing.Point(4, 191);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(40, 15);
+            this.label61.Size = new System.Drawing.Size(47, 15);
             this.label61.TabIndex = 13;
             this.label61.Text = "1 7 0 4";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3022,7 +3061,7 @@
             this.label74.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.Location = new System.Drawing.Point(4, 343);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(43, 15);
+            this.label74.Size = new System.Drawing.Size(51, 15);
             this.label74.TabIndex = 27;
             this.label74.Text = "1 7 0 5 ";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3033,7 +3072,7 @@
             this.label76.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.Location = new System.Drawing.Point(4, 362);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(43, 15);
+            this.label76.Size = new System.Drawing.Size(51, 15);
             this.label76.TabIndex = 29;
             this.label76.Text = "1 7 0 6 ";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3044,7 +3083,7 @@
             this.label77.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label77.Location = new System.Drawing.Point(4, 381);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(43, 15);
+            this.label77.Size = new System.Drawing.Size(51, 15);
             this.label77.TabIndex = 30;
             this.label77.Text = "1 7 0 8 ";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3055,7 +3094,7 @@
             this.label78.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label78.Location = new System.Drawing.Point(4, 400);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(40, 15);
+            this.label78.Size = new System.Drawing.Size(47, 15);
             this.label78.TabIndex = 31;
             this.label78.Text = "1 7 0 9";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3066,7 +3105,7 @@
             this.label79.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.Location = new System.Drawing.Point(4, 419);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(22, 15);
+            this.label79.Size = new System.Drawing.Size(25, 15);
             this.label79.TabIndex = 32;
             this.label79.Text = "2 0";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3077,7 +3116,7 @@
             this.label80.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label80.Location = new System.Drawing.Point(4, 438);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(40, 15);
+            this.label80.Size = new System.Drawing.Size(47, 15);
             this.label80.TabIndex = 33;
             this.label80.Text = "2 0 0 1";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3154,7 +3193,7 @@
             this.label87.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.Location = new System.Drawing.Point(70, 20);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(194, 15);
+            this.label87.Size = new System.Drawing.Size(220, 15);
             this.label87.TabIndex = 40;
             this.label87.Text = "Beton, tulla, tjegulla dhe qeramike";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3198,7 +3237,7 @@
             this.label94.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label94.Location = new System.Drawing.Point(70, 96);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(131, 15);
+            this.label94.Size = new System.Drawing.Size(150, 15);
             this.label94.TabIndex = 47;
             this.label94.Text = "Dru, qeleq dhe plastike";
             this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3242,7 +3281,7 @@
             this.label98.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label98.Location = new System.Drawing.Point(70, 172);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(249, 15);
+            this.label98.Size = new System.Drawing.Size(232, 18);
             this.label98.TabIndex = 51;
             this.label98.Text = "PErzierje nga bitumeni dhe produkte katrani";
             this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3253,7 +3292,7 @@
             this.label99.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label99.Location = new System.Drawing.Point(70, 191);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(114, 15);
+            this.label99.Size = new System.Drawing.Size(127, 15);
             this.label99.TabIndex = 52;
             this.label99.Text = "Metalet dhe legurat";
             this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3341,7 +3380,7 @@
             this.label107.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label107.Location = new System.Drawing.Point(70, 343);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(90, 15);
+            this.label107.Size = new System.Drawing.Size(101, 15);
             this.label107.TabIndex = 60;
             this.label107.Text = "Dhera dhe gure";
             this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3352,7 +3391,7 @@
             this.label108.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label108.Location = new System.Drawing.Point(70, 362);
             this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(98, 15);
+            this.label108.Size = new System.Drawing.Size(111, 15);
             this.label108.TabIndex = 61;
             this.label108.Text = "Materiale izoluse";
             this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3363,7 +3402,7 @@
             this.label109.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label109.Location = new System.Drawing.Point(70, 381);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(209, 15);
+            this.label109.Size = new System.Drawing.Size(233, 15);
             this.label109.TabIndex = 62;
             this.label109.Text = "Materialet ndertimore me baze allqie";
             this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3374,7 +3413,7 @@
             this.label110.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label110.Location = new System.Drawing.Point(70, 400);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(243, 15);
+            this.label110.Size = new System.Drawing.Size(211, 18);
             this.label110.TabIndex = 63;
             this.label110.Text = "Mbeturina tjera nga ndertimi dhe demolimi";
             this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3385,7 +3424,7 @@
             this.label111.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label111.Location = new System.Drawing.Point(70, 419);
             this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(127, 15);
+            this.label111.Size = new System.Drawing.Size(139, 15);
             this.label111.TabIndex = 64;
             this.label111.Text = "Mbeturinat komunale";
             this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3396,7 +3435,7 @@
             this.label112.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label112.Location = new System.Drawing.Point(70, 438);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(182, 15);
+            this.label112.Size = new System.Drawing.Size(202, 15);
             this.label112.TabIndex = 65;
             this.label112.Text = "Fraksionet e mbledhura veqmas";
             this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3514,7 +3553,7 @@
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(508, 1052);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(188, 34);
+            this.label46.Size = new System.Drawing.Size(204, 34);
             this.label46.TabIndex = 6;
             this.label46.Text = "1. Mbeturinat e grumbulluara \r\nprej konsumatorve";
             // 
@@ -3575,7 +3614,7 @@
             this.label43.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.Location = new System.Drawing.Point(335, 153);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(192, 34);
+            this.label43.Size = new System.Drawing.Size(215, 34);
             this.label43.TabIndex = 3;
             this.label43.Text = "Menyra e percaktimit\r\n te sasise( a-matje, b- vleresim)";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3586,7 +3625,7 @@
             this.label40.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(8, -52);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(482, 22);
+            this.label40.Size = new System.Drawing.Size(502, 22);
             this.label40.TabIndex = 0;
             this.label40.Text = "FORMULARI 6.1 BILANCI I MBETURINAV TE GRUMBULLUARA";
             // 
@@ -3596,7 +3635,7 @@
             this.label44.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(539, 153);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(188, 34);
+            this.label44.Size = new System.Drawing.Size(204, 34);
             this.label44.TabIndex = 4;
             this.label44.Text = "1. Mbeturinat e grumbulluara \r\nprej konsumatorve";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3607,7 +3646,7 @@
             this.label45.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.Location = new System.Drawing.Point(761, 58);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(263, 17);
+            this.label45.Size = new System.Drawing.Size(284, 17);
             this.label45.TabIndex = 5;
             this.label45.Text = "2. Mbeturinat prej qendrave grumbulluese";
             // 
@@ -3615,7 +3654,7 @@
             // 
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(633, 846);
+            this.tabPage7.Size = new System.Drawing.Size(628, 695);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "F7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -3624,7 +3663,7 @@
             // 
             this.tabPage8.Location = new System.Drawing.Point(4, 4);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(633, 846);
+            this.tabPage8.Size = new System.Drawing.Size(628, 695);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "F8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -3634,7 +3673,7 @@
             this.tabPage9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage9.Location = new System.Drawing.Point(4, 4);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(633, 846);
+            this.tabPage9.Size = new System.Drawing.Size(628, 695);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "F9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -3644,7 +3683,7 @@
             this.tabPage10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.tabPage10.Location = new System.Drawing.Point(4, 4);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(633, 846);
+            this.tabPage10.Size = new System.Drawing.Size(628, 695);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "F10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -3654,55 +3693,19 @@
             this.tabPage11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage11.Location = new System.Drawing.Point(4, 4);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(633, 846);
+            this.tabPage11.Size = new System.Drawing.Size(628, 695);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "F11";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Location = new System.Drawing.Point(3, 821);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(627, 22);
-            this.statusStrip1.TabIndex = 62;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // lblKomuna
-            // 
-            this.lblKomuna.AutoSize = true;
-            this.lblKomuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKomuna.Location = new System.Drawing.Point(343, 140);
-            this.lblKomuna.Name = "lblKomuna";
-            this.lblKomuna.Size = new System.Drawing.Size(63, 16);
-            this.lblKomuna.TabIndex = 63;
-            this.lblKomuna.Text = "Komunat:";
-            // 
-            // lblAddresaK
-            // 
-            this.lblAddresaK.AutoSize = true;
-            this.lblAddresaK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddresaK.Location = new System.Drawing.Point(343, 174);
-            this.lblAddresaK.Name = "lblAddresaK";
-            this.lblAddresaK.Size = new System.Drawing.Size(63, 16);
-            this.lblAddresaK.TabIndex = 64;
-            this.lblAddresaK.Text = "Komunat:";
-            // 
-            // lblWeb
-            // 
-            this.lblWeb.AutoSize = true;
-            this.lblWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWeb.Location = new System.Drawing.Point(343, 211);
-            this.lblWeb.Name = "lblWeb";
-            this.lblWeb.Size = new System.Drawing.Size(63, 16);
-            this.lblWeb.TabIndex = 65;
-            this.lblWeb.Text = "Komunat:";
-            // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(644, 882);
+            this.ClientSize = new System.Drawing.Size(665, 741);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";

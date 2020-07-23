@@ -136,7 +136,7 @@
             // Userat
             // 
             this.Userat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Userat.Location = new System.Drawing.Point(89, 69);
+            this.Userat.Location = new System.Drawing.Point(89, 47);
             this.Userat.Name = "Userat";
             this.Userat.Size = new System.Drawing.Size(240, 150);
             this.Userat.TabIndex = 17;
